@@ -1,0 +1,54 @@
+Teachers
+    ID              id
+    FullName        str
+    WorkSince       date
+    Salary          num
+
+Students
+    ID              id
+    FullName        str 
+    StudentGroupID  id
+
+StudentGroups
+    ID              id
+    Name?           str
+    TeacherID       id
+
+Subjects
+    ID              id
+    Name            str
+    LectureHallID?  id
+
+LectureHalls
+    ID                      id
+    Number                  num
+    Name?                   str
+    Size                    num
+    SpecialEquipmentID?     id
+
+SpecialEquipments
+    ID                      id
+    Projector               b
+    TV                      b
+    Audio                   b
+    InteractiveBoard        b
+    ChemLab                 b
+    PhisicsLab              b
+    BioLab                  b
+    PCClass                 b
+    InternetAccess          b
+
+TimetableData
+    ID                      id
+    TimeSlotID              id
+    DateFrom                date
+    DateUntil               date
+    SubjectID               id
+    LectureHallID           id
+    StudentGroupID          id
+
+TimeSlots
+    ID                      id
+    StartTime               time
+    EndTime                 time
+    WeakDay                 num            
